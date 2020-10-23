@@ -18,6 +18,7 @@ COPY --from=codegolf/lang-j          /          /langs/j/rootfs/
 COPY --from=codegolf/lang-java       /       /langs/java/rootfs/
 COPY --from=codegolf/lang-javascript / /langs/javascript/rootfs/
 COPY --from=codegolf/lang-julia      /      /langs/julia/rootfs/
+COPY --from=codegolf/lang-kotlin     /     /langs/kotlin/rootfs/
 COPY --from=codegolf/lang-lisp       /       /langs/lisp/rootfs/
 COPY --from=codegolf/lang-lua        /        /langs/lua/rootfs/
 COPY --from=codegolf/lang-nim        /        /langs/nim/rootfs/
@@ -44,6 +45,7 @@ RUN mkdir -p /langs/bash/rootfs/proc       /langs/bash/rootfs/tmp \
              /langs/java/rootfs/proc       /langs/java/rootfs/tmp \
        /langs/javascript/rootfs/proc /langs/javascript/rootfs/tmp \
             /langs/julia/rootfs/proc      /langs/julia/rootfs/tmp \
+           /langs/kotlin/rootfs/proc     /langs/kotlin/rootfs/tmp \
              /langs/lisp/rootfs/proc       /langs/lisp/rootfs/tmp \
               /langs/lua/rootfs/proc        /langs/lua/rootfs/tmp \
               /langs/nim/rootfs/proc        /langs/nim/rootfs/tmp \

@@ -1,0 +1,23 @@
+#!/bin/bash
+
+export LANG=C.UTF-8
+export LANGUAGE=C:en
+export LC_CTYPE="C.UTF-8"
+export LC_NUMERIC="C.UTF-8"
+export LC_TIME="C.UTF-8"
+export LC_COLLATE="C.UTF-8"
+export LC_MONETARY="C.UTF-8"
+export LC_MESSAGES="C.UTF-8"
+export LC_PAPER="C.UTF-8"
+export LC_NAME="C.UTF-8"
+export LC_ADDRESS="C.UTF-8"
+export LC_TELEPHONE="C.UTF-8"
+export LC_MEASUREMENT="C.UTF-8"
+export LC_IDENTIFICATION="C.UTF-8"
+export LC_ALL=C.UTF-8
+
+read -r -d '' code
+
+/opt/jdk/bin/java -Dkotlin.home=/opt/kotlin/ -cp opt/kotlin/lib/kotlin-runner.jar org.jetbrains.kotlin.runner.Main -e "$code"
+
+# alternatively: `echo "$code" > /tmp/code.main.kts` and pass that to kotlin runner

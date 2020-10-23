@@ -12,7 +12,7 @@ import (
 	"unicode"
 )
 
-const timeout = 7 * time.Second
+const timeout = 30 * time.Second
 
 type Scorecard struct {
 	Answer         string

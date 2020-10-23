@@ -50,6 +50,7 @@ for %langs{ @langs || * }:p.sort -> (:key($name), :value(%lang)) {
         when 'Fortran'    { $ver = "GNU Fortran $digits" }
         when 'Haskell'    { $ver = "Glasgow Haskell Compiler $digits" }
         when 'JavaScript' { $ver = "V8 $digits" }
+        when 'Kotlin'     { $ver ~~ s:g/ 'Kotlin version ' // }
         when 'Lisp'       { $ver = "GNU CLISP $digits" }
         when 'Raku'       { $ver ~~ s:g/ 'This is ' | 'version ' | 'built ' | \.$ // }
         default           { $ver = $digits }

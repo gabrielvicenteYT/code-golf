@@ -63,6 +63,11 @@ size    = '284 MiB'
 version = '1.5.2'
 website = '//julialang.org'
 
+[Kotlin]
+size    = '150 MiB'
+version = '1.4.10-release-411 (JRE 14.0.2+12)'
+website = '//kotlinlang.org'
+
 [Lisp]
 size    = '35.4 MiB'
 version = 'GNU CLISP 2.49.92'
